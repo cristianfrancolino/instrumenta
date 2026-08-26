@@ -1,6 +1,6 @@
 function App() {
   return (
-    <h1>E-Commerce Cristian Francolino</h1>
+    <h1>Instrumenta</h1>
   )
 }
 
