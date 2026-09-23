@@ -1,0 +1,30 @@
+.cartWidget {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  background: none;
+  border: none;
+  color: #f5f0e6;
+  cursor: pointer;
+}
+
+.cartWidget:hover {
+  color: #e0a458;
+}
+
+.cartWidget-badge {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 9px;
+  background-color: #e0a458;
+  color: #1f1b16;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: center;
+}
