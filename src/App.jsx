@@ -1,15 +1,12 @@
-import ProductCard from "./components/ProductCard";
+import Navbar from "./components/Navbar/Navbar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 function App() {
   return (
-    <main>
-      <h1>Instrumenta</h1>
-
-      <section>
-        <ProductCard nombre="Guitarra" precio={500} />
-        <ProductCard nombre="Batería" precio={1000} />
-      </section>
-    </main>
+    <>
+      <Navbar />
+      <ItemListContainer greeting="¡Bienvenidos a Instrumenta! Encontrá tu próximo instrumento" />
+    </>
   );
 }
 
