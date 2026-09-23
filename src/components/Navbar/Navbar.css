@@ -2,10 +2,8 @@
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
+  gap: 28px;
   padding: 14px 32px;
   background-color: #1f1b16;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -28,10 +26,9 @@
   color: #e0a458;
 }
 
-.navbar-right {
-  display: flex;
-  align-items: center;
-  gap: 28px;
+/* empuja las categorias y el carrito hacia la derecha */
+.navbar-menu {
+  margin-left: auto;
 }
 
 .navbar-categorias {
@@ -52,19 +49,63 @@
   border-bottom-color: #e0a458;
 }
 
-@media (max-width: 700px) {
+.navbar-acciones {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* en escritorio no se muestra */
+.navbar-hamburguesa {
+  display: none;
+  padding: 6px;
+  background: none;
+  border: none;
+  color: #f5f0e6;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
   .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0;
     padding: 12px 16px;
   }
 
-  .navbar-right {
+  .navbar-hamburguesa {
+    display: flex;
+  }
+
+  /* el menu baja abajo de todo y ocupa el ancho completo */
+  .navbar-menu {
+    display: none;
+    order: 3;
     width: 100%;
-    justify-content: space-between;
-    gap: 12px;
+    margin-left: 0;
+  }
+
+  .navbar-menu.abierto {
+    display: block;
   }
 
   .navbar-categorias {
-    flex-wrap: wrap;
-    gap: 12px;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 8px;
+  }
+
+  .navbar-categorias a {
+    display: block;
+    padding: 12px 4px;
+    border-bottom: 1px solid #3a332a;
+  }
+
+  .navbar-categorias li:last-child a {
+    border-bottom: none;
+  }
+
+  .navbar-categorias a:hover {
+    border-bottom-color: #3a332a;
   }
 }

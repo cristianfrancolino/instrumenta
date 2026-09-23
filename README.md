@@ -14,7 +14,7 @@ Instrumenta es un e-commerce de instrumentos musicales, construido como primer p
 
 Los componentes están en `src/components`, cada uno en su propia carpeta junto con su archivo de estilos.
 
-- **Navbar**: barra de navegación que queda fija arriba. Tiene el logo de la tienda a la izquierda y a la derecha las categorías de instrumentos (Guitarras, Bajos, Baterías, Teclados y Accesorios) y el carrito. Las categorías por ahora son links sin ruta, más adelante se van a usar para filtrar productos.
+- **Navbar**: barra de navegación que queda fija arriba. Tiene el logo de la tienda a la izquierda y a la derecha las categorías de instrumentos (Guitarras, Bajos, Baterías, Teclados y Accesorios) y el carrito. Las categorías por ahora son links sin ruta, más adelante se van a usar para filtrar productos. En celulares las categorías se esconden en un menú hamburguesa que se abre y cierra con `useState`; el carrito queda siempre visible.
 - **CartWidget**: ícono del carrito con un globito que muestra la cantidad de productos. Por ahora el número está fijo (3), después se va a conectar con el estado del carrito.
 - **ItemListContainer**: contenedor de la sección principal. Recibe por props un mensaje de bienvenida (`greeting`) desde `App` y lo muestra centrado. Más adelante acá se va a mostrar el listado de productos.
 - **ProductCard**: tarjeta de producto con contador de cantidad y botón de favorito (hecha en la clase de useState, todavía no se usa en la app).
